@@ -1,13 +1,21 @@
-This is abstract base component for cameras, corresponding [THREE.Camera](https://threejs.org/docs/index.html#api/cameras/Camera). This component should always be mixined (inherited). You probably want a [VglPerspectiveCamera](vgl-perspective-camera) and [VglOrthographicCamera](vgl-orthographic-camera). Properties of [VglObject3d](vgl-object3d) are also available as mixin. 
+This is abstract base component for cameras,
+corresponding [THREE.Camera](https://threejs.org/docs/index.html#api/cameras/Camera).
+This component should always be mixined (inherited).
+You probably want a [VglPerspectiveCamera](vgl-perspective-camera)
+and [VglOrthographicCamera](vgl-orthographic-camera).
 
-
+Properties of [VglObject3d](vgl-object3d) are also available as mixin. 
 
 ## props 
+
 - `orbit-target` ***vector3*** (*optional*) 
-Position in 3D space for the camera to point towards. This property overwrite rotation property when both defined. 
+
+  Position in 3D space for the camera to point towards.
+  This property overwrite rotation property when both defined. 
 
 - `orbit-position` ***spherical*** (*optional*) 
-Spherical position around orbitTarget. This property overwrite position and rotation properties. If orbitTarget is not defined, automatically set to (0, 0, 0). 
 
-
+  Spherical position around orbitTarget.
+  This property overwrite position and rotation properties.
+  If orbitTarget is not defined, automatically set to (0, 0, 0). 
 
