@@ -15,6 +15,12 @@ VglObject3d components inside default slots are added as children.
 
   The object's local rotation as a euler angle. 
 
+- `rotation-quaternion` ***quaternion*** (*optional*) 
+
+  The object's local rotation as a quaternion (specified in x, y, z, w order).
+  Do not use in conjunction with the rotation prop, since they both control the same property
+  of the underlying THREE.Object3D object. 
+
 - `scale` ***vector3*** (*optional*) 
 
   The object's local scale as a 3D vector. 
@@ -30,4 +36,8 @@ VglObject3d components inside default slots are added as children.
 - `name` ***string*** (*optional*) 
 
   Optional name of the object. 
+
+- `visible` ***boolean*** (*optional*) `default: true` 
+
+  Whether the object is visible. 
 
